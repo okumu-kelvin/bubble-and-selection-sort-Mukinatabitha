@@ -12,6 +12,5 @@ def bubble_sort(unsorted_list):
             break
 my_list = [54, 39, 85, 12, 27, 10, 93]
 bubble_sort(my_list)
-print("Sorted list:", my_list)
-Sorted list: [11, 12, 22, 25, 34, 64, 90]
+print("Sorted list:", my_list)]
 pass
