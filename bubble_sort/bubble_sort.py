@@ -1,16 +1,15 @@
 def bubble_sort(unsorted_list):
-    # TODO: Implement bubble sort
-    def bubble_sort(unsorted_list):
-       n = len(unsorted_list)
+    # Create a copy so the original list is not modified
+    arr = unsorted_list[:]
+    n = len(arr)
+    
     for i in range(n):
         swapped = False
         for j in range(0, n - i - 1):
-            if unsorted_list[j] > unsorted_list[j + 1]:
-                unsorted_list[j], unsorted_list[j + 1] = unsorted_list[j + 1], unsorted_list[j]
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 swapped = True
         if not swapped:
             break
-my_list = [54, 39, 85, 12, 27, 10, 93]
-bubble_sort(my_list)
-print("Sorted list:", my_list)]
-pass
+    
+    return arr
